@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# User.create(first_name: "MC", last_name: "Simoes", username: "mc118dogs", password: "ilovedogs")
-# User.create(first_name: "Linya", last_name: "Hu", username: "linya.hu", password: "ilovedogs")
-# User.create(first_name: "Emily", last_name: "Seieroe", username: "emily", password: "ilovedogs")
+User.create(first_name: "MC", last_name: "Simoes", username: "mc118dogs", password: "ilovedogs")
+User.create(first_name: "Linya", last_name: "Hu", username: "linya.hu", password: "ilovedogs")
+User.create(first_name: "Emily", last_name: "Seieroe", username: "emily", password: "ilovedogs")
 
 ### Categories: [top, bottom, outerwear, dress, shoes, accessories, handbag]
 
@@ -38,3 +38,23 @@
 #   photo: "",
 #   user_id: 1
 # )
+
+# i = Item.new(user_idname: "emilysitem")
+#
+
+
+# create_table "items", force: :cascade do |t|
+#   t.string "description"
+#   t.string "category"
+#   t.string "subcategory"
+#   t.string "color"
+#   t.string "season"
+#   t.string "occasion"
+#   t.string "keywords"
+#   t.string "brand"
+#   t.string "image"
+#   t.integer "user_id"
+#   t.datetime "created_at", null: false
+#   t.datetime "updated_at", null: false
+# end
+#
