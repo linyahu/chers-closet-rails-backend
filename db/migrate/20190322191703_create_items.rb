@@ -9,7 +9,6 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :occasion
       t.string :keywords
       t.string :brand
-      t.string :image
       t.integer :user_id
 
       t.timestamps
