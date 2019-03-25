@@ -8,8 +8,8 @@ class ItemsController < ApplicationController
   end
 
   def create
+    byebug
         @item = Item.create(item_params)
-        # byebug
         # If you want to get just the path without the base_url,
         # another way to do this is like this; you can also specify
         # other flags like saying this should be an attachment, etc...
@@ -33,6 +33,7 @@ class ItemsController < ApplicationController
 
   def item_params
       params.permit(:image, :user_id)
+      # params.permit(:image, :user_id, :description, :category, :subcategory, :color, :season, :occasion, :keywords, :brand)
   end
 
   def set_storage_url
