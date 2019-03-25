@@ -19,24 +19,24 @@ class ItemsController < ApplicationController
             user_id: @item.user_id,
             url: url_for(@item.image)
         }
-    end
+  end
 
-    def show
-        @item = Item.find(params[:id])
-        render json: {
-            user_id: @item.user_id,
-            url: @item.image.service_url
-        }
-    end
+  def show
+      @item = Item.find(params[:id])
+      render json: {
+          user_id: @item.user_id,
+          url: @item.image.service_url
+      }
+  end
 
-    private
+  private
 
-    def item_params
-        params.permit(:image, :user_id)
-    end
+  def item_params
+      params.permit(:image, :user_id)
+  end
 
-    def set_storage_url
-        ActiveStorage::Current.host = request.base_url
-    end
+  def set_storage_url
+      ActiveStorage::Current.host = request.base_url
+  end
 
 end
