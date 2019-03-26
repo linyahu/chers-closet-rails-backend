@@ -1,7 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_storage_url, only: [:create, :show]
 
-
   def index
     @items = Item.all
     render json: @items

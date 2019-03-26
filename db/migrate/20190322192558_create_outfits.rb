@@ -5,6 +5,7 @@ class CreateOutfits < ActiveRecord::Migration[5.2]
       t.string :season
       t.string :category
       t.string :occasion
+      t.integer :user_id
 
       t.timestamps
     end

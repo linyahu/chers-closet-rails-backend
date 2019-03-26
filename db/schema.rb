@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 2019_03_22_192638) do
     t.string "season"
     t.string "category"
     t.string "occasion"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -7,54 +7,30 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+##############################################
+#           Seed data for Users
+##############################################
+
 User.create(first_name: "MC", last_name: "Simoes", username: "mc118dogs", password: "ilovedogs")
 User.create(first_name: "Linya", last_name: "Hu", username: "linya.hu", password: "ilovedogs")
 User.create(first_name: "Emily", last_name: "Seieroe", username: "emily", password: "ilovedogs")
 
-### Categories: [top, bottom, outerwear, dress, shoes, accessories, handbag]
+##############################################
+#           Seed data for Outfits
+##############################################
 
-# Item.create(
-#   description: "black sweater",
-#   category: "top",
-#   subcategory: "sweater",
-#   color: "black",
-#   season: "winter",
-#   occasion: "casual",
-#   keywords: "sweater, light, v-neck",
-#   brand: "",
-#   photo: "",
-#   user_id: 1
-# )
-#
-# Item.create(
-#   description: "olive green corduroy pants",
-#   category: "bottom",
-#   subcategory: "pants",
-#   color: "green",
-#   season: "winter",
-#   occasion: "casual",
-#   keywords: "olive green, flare",
-#   brand: "Lucky Brand",
-#   photo: "",
-#   user_id: 1
-# )
+Outfit.create(
+  description: "school outfit 1",
+  season: "spring",
+  category: "",
+  occasion: "",
+  user_id: 1
+)
 
-# i = Item.new(user_idname: "emilysitem")
-#
-
-
-# create_table "items", force: :cascade do |t|
-#   t.string "description"
-#   t.string "category"
-#   t.string "subcategory"
-#   t.string "color"
-#   t.string "season"
-#   t.string "occasion"
-#   t.string "keywords"
-#   t.string "brand"
-#   t.string "image"
-#   t.integer "user_id"
-#   t.datetime "created_at", null: false
-#   t.datetime "updated_at", null: false
-# end
-#
+Outfit.create(
+  description: "school outfit 2",
+  season: "spring",
+  category: "",
+  occasion: "",
+  user_id: 1
+)
