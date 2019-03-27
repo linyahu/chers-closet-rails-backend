@@ -14,7 +14,7 @@ class OutfitItemsController < ApplicationController
     @outfit_item = OutfitItem.find(params[:id])
     @outfit_item.destroy
 
-    # redirect_to 
+    # redirect_to
   end
 
   private
