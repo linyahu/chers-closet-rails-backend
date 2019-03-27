@@ -22,8 +22,11 @@ class OutfitsController < ApplicationController
     render json: @outfit
   end
 
-  def delete
-    # also to come later...
+  def destroy
+    @outfit = Outfit.find(params[:id])
+    @outfit.destroy
+
+    # redirect_to
   end
 
   private
