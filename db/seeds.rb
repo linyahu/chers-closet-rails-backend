@@ -26,11 +26,11 @@ Outfit.create(
   occasion: "",
   user_id: 1
 )
-
-Outfit.create(
-  description: "school outfit 2",
-  season: "spring",
-  category: "",
-  occasion: "",
-  user_id: 1
-)
+#
+# Outfit.create(
+#   description: "school outfit 2",
+#   season: "spring",
+#   category: "",
+#   occasion: "",
+#   user_id: 1
+# )
