@@ -1,8 +1,9 @@
 class OutfitsController < ApplicationController
 
   def index
-    @outfits = Outfit.all
+    @outfits = Outfit.all.sort_by{|outfit| outfit.id}
     render json: @outfits
+
   end
 
   def create
@@ -15,7 +16,11 @@ class OutfitsController < ApplicationController
     render json: @outfit
   end
 
-
+  def update
+    @outfit = Outfit.find(params[:id])
+    @outfit.update(outfit_params)
+    render json: @outfit
+  end
 
   def delete
     # also to come later...
