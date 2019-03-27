@@ -3,11 +3,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
     create_table :items do |t|
       t.string :description
       t.string :category
-      t.string :subcategory
       t.string :color
-      t.string :season
-      t.string :occasion
-      t.string :keywords
       t.string :brand
       t.integer :user_id
 

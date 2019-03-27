@@ -30,7 +30,8 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-      params.permit(:image, :user_id, :description, :category, :subcategory, :color, :season, :occasion, :keywords, :brand)
+    # params.permit(:image, :user_id, :description, :category, :subcategory, :color, :season, :occasion, :keywords, :brand)
+    params.permit(:image, :user_id, :description, :category, :color, :brand)
   end
 
   def set_storage_url

@@ -39,11 +39,7 @@ ActiveRecord::Schema.define(version: 2019_03_22_192638) do
   create_table "items", force: :cascade do |t|
     t.string "description"
     t.string "category"
-    t.string "subcategory"
     t.string "color"
-    t.string "season"
-    t.string "occasion"
-    t.string "keywords"
     t.string "brand"
     t.integer "user_id"
     t.datetime "created_at", null: false
