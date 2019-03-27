@@ -10,7 +10,11 @@ class OutfitItemsController < ApplicationController
     render json: @outfit_item
   end
 
-  def delete
+  def destroy
+    @outfit_item = OutfitItem.find(params[:id])
+    @outfit_item.destroy
+
+    # redirect_to 
   end
 
   private
