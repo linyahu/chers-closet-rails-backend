@@ -27,6 +27,12 @@ class ItemsController < ApplicationController
       }
   end
 
+  def destroy
+    @item = Item.find(params[:id])
+    @item.delete_item_from_outfits
+    @item.destroy
+  end
+
   private
 
   def item_params
