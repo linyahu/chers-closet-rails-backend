@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   before_action :set_storage_url, only: [:create, :show]
 
   def index
-    @items = Item.all
+    @items = Item.all.sort_by{|i| i.id}.reverse
     render json: @items
   end
 
@@ -25,6 +25,13 @@ class ItemsController < ApplicationController
           user_id: @item.user_id,
           url: @item.image.service_url
       }
+  end
+
+  def destroy
+    @item = Item.find(params[:id])
+    @item.delete_item_from_outfits
+    @item.destroy
+
   end
 
   private

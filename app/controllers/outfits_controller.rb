@@ -1,7 +1,7 @@
 class OutfitsController < ApplicationController
 
   def index
-    @outfits = Outfit.all.sort_by{|outfit| outfit.id}
+    @outfits = Outfit.all.sort_by{|outfit| outfit.id}.reverse
     render json: @outfits
 
   end
