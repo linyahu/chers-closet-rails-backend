@@ -11,21 +11,13 @@
 #           Seed data for Users
 ##############################################
 
-User.create(first_name: "MC", last_name: "Simoes", username: "mc118dogs", password: "ilovedogs")
-User.create(first_name: "Linya", last_name: "Hu", username: "linya.hu", password: "ilovedogs")
-User.create(first_name: "Emily", last_name: "Seieroe", username: "emily", password: "ilovedogs")
+User.create(first_name: "Demo", last_name: "Account", username: "demo", password: "1234")
+
 
 ##############################################
 #           Seed data for Outfits
 ##############################################
 
-Outfit.create(
-  description: "school outfit 1",
-  season: "spring",
-  category: "",
-  occasion: "",
-  user_id: 1
-)
 #
 # Outfit.create(
 #   description: "school outfit 2",

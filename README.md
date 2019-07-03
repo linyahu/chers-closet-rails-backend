@@ -1,13 +1,10 @@
+# Cher's Closet
+##### Created by: Linya Hu, Maria Cristina Simoes, and Emily Seieroe (2019)
 
-Example of our outfit/item structure
+## About Cher's Closet
 
-# first outfit:
-# id  description     season  category occasion
-# 1   Winter Outfit 1 winter  casual
+Cher's Closet is an outfit planning app that was inspired by the 1995 movie Clueless. It is built with a React front end and a Rails backend, using ActiveStorage as a way to upload and save images.
 
-# outfit_item table:
-# id outfit_id  item_id
-# 1     1         5
-# 2     1         4
-# 3     1         2
-# 4     1         6
+In Cher's Closet users can upload clothing items to their closet, create new outfits out of many clothing items and then edit or delete items and outfits. There is also a filter function to filter items in your closet by category. This allows users to find items quickly, instead of clicking endlessly through the carousel.
+
+You can view the frontend of the code [here](https://github.com/lh62594/chers-closet-frontend).
